@@ -1,0 +1,51 @@
+<resources>
+
+    <!--
+    -->
+    <string name="app_name">CocktailBuilder</string>
+    <string name="tab_text_1">My Bar</string>
+    <string name="tab_text_2">Makeable</string>
+    <string name="tab_text_3">Full List</string>
+
+
+    <!-- Bar Fragment -->
+    <string name="brand_hint"><b><u>Brand:</u></b> <i>e.g. <b>Captain Morgan\'s</b></i></string>
+    <string name="variant_hint"><b><u>Variant:</u></b> <i> e.g.<b>orange</b> juice | <b>Spiced </b>rum</i></string>
+    <string name="type_hint"><b><u>Type:</u></b> <i> e.g. juice | rum | bitters </i></string>
+    <string name="common_item"><b><u>Common Household Item?</u></b> <i> e.g. eggs | sugar </i></string>
+    <string name="fragment_add_bar_item"><u>Add item to bar</u></string>
+
+    
+    <!-- Delete item dialog -->
+    <string name="delete_item_title"><b><u>Remove item?</u></b></string>
+    <string name="delete_permanently">remove this item from database?</string>
+    <string name="delete_recipe_title"><b><u>Remove Recipe?</u></b></string>
+
+    <!-- Full list fragment -->
+
+    <string name="ingredients"><b>Ingredient list</b></string>
+    <string name="quantity_hint">0</string>
+    <string name="method"><b>Method</b></string>
+    <string name="notes"><b>Notes</b></string>
+    <string name="notes_hint">Notes</string>
+    <string name="ingredientsListTitle"><u>Ingredients</u></string>
+    <string name="partsTitle"><u>Parts</u></string>
+    <string name="Save"><b>Save</b></string>
+    <string name="ratingValue">%1$s/5</string>
+    <string name="splash">splash</string>
+
+    <!-- Search -->
+    <string name="app_label">CocktailBuilder</string>
+    <string name="search_hint">Search: </string>
+
+
+    <!-- Add/edit recipe fragment -->
+    <string name="delete_ingredient">Delete ingredient?</string>
+    <string name="add_recipe_title"><b><u>Add Recipe</u></b></string>
+    <string name="recipe_title_hint">Recipe Title</string>
+    <string name="add_ingredient_hint">Type to add ingredients</string>
+    <string name="method_hint">Add method</string>
+    <string name="add_recipe_button">Add Recipe</string>
+    <string name="update_recipe_button">Update Recipe</string>
+    <string name="edit_recipe_title">Edit Recipe</string>
+</resources>

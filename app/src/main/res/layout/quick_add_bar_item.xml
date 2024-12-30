@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="250dp"
+    android:padding="8dp"
+    android:importantForAutofill="no"
+    android:id="@+id/dialogue_add_bar_item"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:id="@+id/autocomplete_layout"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/quick_bar_add_autocomplete"
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:completionThreshold="1"
+            android:inputType="text"
+            android:focusable="true"
+            android:gravity="center"
+            android:hint="@string/add_ingredient_hint"
+            android:textColor="@color/white_blue"
+            android:textColorHighlight="@color/white_blue"
+            android:textColorHint="@color/grey"
+            android:imeOptions="actionGo"/>
+
+        <LinearLayout
+            android:id="@+id/additional_ingredient_button_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

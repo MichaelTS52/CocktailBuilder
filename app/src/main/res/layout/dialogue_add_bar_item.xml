@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="8dp"
+    android:importantForAutofill="no"
+    android:id="@+id/dialogue_add_bar_item"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/navy"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/add_ingredient_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/fragment_add_bar_item"
+            android:textColor="@color/white_blue"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/add_brand_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="@string/brand_hint"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="15sp"
+            android:text=""
+            android:focusable="true"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/add_variant_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="@string/variant_hint"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="15sp"
+            android:text=""
+            android:focusable="true"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/add_type_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="@string/type_hint"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="15sp"
+            android:text=""
+            android:cursorVisible="true"
+            android:inputType="text"/>
+
+
+        <Switch
+            android:id="@+id/common_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="@string/common_item"
+            android:textColor="@color/white_blue"
+            android:textColorHint="@color/grey" />
+
+        <CheckBox
+            android:id="@+id/in_bar_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="Currently in bar?"
+            android:textColor="@color/white_blue"
+            android:buttonTint="@color/white_blue"
+            android:checked="true"/>
+
+
+
+        <Button
+            android:id="@+id/add_new_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="Add Item"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="83dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bar"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

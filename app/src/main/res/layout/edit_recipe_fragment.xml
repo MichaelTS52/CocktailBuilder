@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navy"
+        tools:context=".MainActivity"
+        android:id="@+id/fragment_add_recipe"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
+            android:gravity="center"
+            android:text="@string/edit_recipe_title"
+            android:textSize="35sp"
+            android:textColor= "@color/white_blue"
+            android:id="@+id/edit_recipe_fragment_title"/>
+
+        <EditText
+            android:id="@+id/add_recipe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_below="@+id/edit_recipe_fragment_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:hint="@string/recipe_title_hint"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/white_blue"
+            android:textColorHint="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:maxLines="1"
+            android:background="@color/navy_dark"/>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_recipe_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ingredients_layout"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/ingredients"
+                android:textSize="15sp"
+                android:textColor="@color/white_blue"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="275dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white_blue"
+                    android:textColorHint="@color/grey"
+                    android:hint="@string/add_ingredient_hint"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/autocomplete"
+                    android:gravity="center"
+                    android:textColorHighlight="@color/white_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:completionThreshold="1"/>
+
+                <EditText
+                    android:id="@+id/add_quantity"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:hint="@string/quantity_hint"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textColor="@color/white_blue"
+                    android:textColorHint="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/additional_ingredient_button_placeholder"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ingredients_list">
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/method"
+            android:textSize="15sp"
+            android:textColor="@color/white_blue"
+            android:layout_below="@+id/ingredients_layout" />
+
+        <EditText
+            android:id="@+id/add_method"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_below="@+id/ingredients_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#0B1230"
+            android:hint="@string/method_hint"
+            android:padding="8dp"
+            android:textColor="@color/white_blue"
+            android:textColorHint="@color/white"
+            android:gravity="start"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_method"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/notes"
+            android:textColor="@color/white_blue"
+            android:textSize="15sp"
+            android:id="@id/notes_title"/>
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_below="@+id/notes_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#0B1230"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="start"
+            android:hint="@string/notes_hint"
+            android:padding="8dp"
+            android:textColor="@color/white_blue"
+            android:textColorHint="@color/white" />
+
+        <RatingBar
+            android:id="@+id/add_recipe_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:foregroundGravity="center_horizontal"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar" />
+
+        <Button
+            android:id="@+id/edit_recipe_fragment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_recipe_ratingbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/update_recipe_button"
+            android:textColor="@color/white_blue" />
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
